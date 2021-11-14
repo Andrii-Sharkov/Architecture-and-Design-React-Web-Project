@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header-component/header';
+import Hero from './components/hero-component/hero';
+import Showcase from './components/showcase-component/showcase';
+import Slider from './components/slider-component/slider';
+import WeDo from './components/what-we-do-component/WeDo';
+import sliderData from './components/SliderData/sliderData';
+import ShowcaseTwo from './components/showcase-two-component/showcaseTwo';
+import Statistics from './components/statistics-component/statistics';
+import Contacts from './components/contacts-component/contacts';
+import Footer from './components/footer-component/footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <Showcase />
+      <WeDo />
+      <Slider slides={sliderData}/>
+      <ShowcaseTwo />
+      <Statistics />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
